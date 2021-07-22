@@ -37,16 +37,16 @@ public class Member implements Serializable {
 	@Column(name = "type")
 	private String type;
 	
-	@NotEmpty(message = "*Please enter fisrt name")
-	@NotNull(message = "*Please enter fisrt name")
+	@NotEmpty(message = "*Please enter first name")
+	@NotNull(message = "*Please enter first name")
 	@Column(name = "first_name")
 	private String firstName;
 	
-	@NotEmpty(message = "*Please enter middle name")
-	@NotNull(message = "*Please enter middle name")
 	@Column(name = "middle_name")
 	private String middleName;
-	
+
+	@NotEmpty(message = "*Please enter last name")
+	@NotNull(message = "*Please enter last name")
 	@Column(name = "last_name")
 	private String lastName;
 	
